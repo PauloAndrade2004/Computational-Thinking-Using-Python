@@ -45,8 +45,6 @@ print('Exibindo minha lista percorrendo')
 for i in minha_Lista:
     print(i)
 
-
-
 print(line)
 
 #Podemos buscar elementos na nossa lista.
