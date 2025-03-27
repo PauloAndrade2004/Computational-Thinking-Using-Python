@@ -1,20 +1,17 @@
+nome_filme_usuario = input("Insira o nome do filme: ")
 
-idade_input = input('Qual a sua idade?')
-
-if idade_input.isdigit():
-    idade = int(idade_input)
-
-    if idade > 17:
-        print('Pode entrar sozinho (a)')
+if nome_filme_usuario == 'AnnaBelle':
+    idade_Usuario = int(input("Qual a sua idade? "))
+    if idade_Usuario > 18:
+        print(f'Você pode assistir o filme {nome_filme_usuario}')
     else:
-        responsavel = input('Acompanhado de responsável? Sim (S) ou Não (N)')
-        if responsavel.lower() in ['s', 'n']:
-            if responsavel.lower() == 's':
-                print('Pode entrar acompanhado (a)')
-            else:
-                print('Não pode entrar!')
-        else:
-            print('Resposta incorreta!')
+        print(f"Você não pode assistir o filme {nome_filme_usuario}")
 
+elif nome_filme_usuario == 'Vingadores':
+    idade_Usuario = int(input("Qual a sua idade? "))
+    if idade_Usuario > 16:
+        print(f'Você pode assistir o filme {nome_filme_usuario}')
+    else:
+        print(f"Você não pode assistir o filme {nome_filme_usuario}")
 else:
-    print('Idade incorreta!')
+    print('Filme não encontrado. Ou não registrado.')
